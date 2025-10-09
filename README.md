@@ -7,7 +7,7 @@
 
 <a href="#%EF%B8%8F-quickstart">🏗️ Quickstart </a> • <a href="#-datasets-models-and-evaluation-results">📊 Datasets & Models </a> • <a href="#%EF%B8%8F-development-guide">🛠️ Development </a>
 
- <a href="#-the-goal-of-ulmevalkit">🎯 Goal </a> • <a href="#-contributors">🥳 Contributors </a>  • <a href="#-acknowledgement">👍 Acknowledgement </a> • <a href="#%EF%B8%8F-citation">🖊️ Citation </a>
+ <a href="#-the-goal-of-ulmevalkit">🎯 Goal </a> • <a href="#-contributors">🥳 Contributors </a> • <a href="#-acknowledgement">👍 Acknowledgement </a> • <a href="#%EF%B8%8F-citation">🖊️ Citation </a>
 
 **ULMEvalKit** (Python package: **ulmeval**) is an open-source evaluation toolkit on **generation benchmarks** for **unified understanding & generation models (ULMs) and generative models**. It enables **one-command evaluation** of ULMs on various generation benchmarks, eliminating the heavy workload of data preparation across multiple repositories.
 
