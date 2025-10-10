@@ -13,12 +13,11 @@ class GenEval(TextBaseDataset):
     MODALITY = "TEXT"
     NUM_GENERATIONS = 4
     DATASET_URL = {
-        'GenEval':
-        'GenEval.tsv',
+        'GenEval': 'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/GenEval.tsv',
     }
 
     DATASET_MD5 = {
-        'GenEval': None,
+        'GenEval': '2c3a418e2b5a53a2d411b050aad834b4',
     }
 
     def __init__(self, dataset='GenEval', skip_noimg=True):

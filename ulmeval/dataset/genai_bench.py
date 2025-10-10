@@ -24,11 +24,11 @@ class GenAI_Bench(TextBaseDataset):
     NUM_GENERATIONS = 1
 
     DATASET_URL = {
-        'GenAI_Bench_Image': 'genai_image.tsv',
+        'GenAI_Bench': 'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/GenAI_Bench.tsv',
     }
 
     DATASET_MD5 = {
-        'GenAI_Bench_Image': None,
+        'GenAI_Bench': 'c400de695ecf172df4b92514e5e17049',
     }
 
     def __init__(self, dataset='GenAI_Bench_Image'):

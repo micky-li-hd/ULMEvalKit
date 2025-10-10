@@ -13,11 +13,11 @@ class DPGBench(TextBaseDataset):
     MODALITY = 'TEXT'
 
     DATASET_URL = {
-        'DPGBench': 'dpg_bench.tsv',
+        'DPGBench': 'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/DPG_Bench.tsv',
     }
 
     DATASET_MD5 = {
-        'DPGBench': None,
+        'DPGBench': 'c1551e34ea5477eaee81153eae19c8bc',
     }
 
     def __init__(self, dataset='DPGBench', skip_noimg=True):

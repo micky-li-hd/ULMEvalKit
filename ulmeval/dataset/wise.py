@@ -23,17 +23,11 @@ class WISE(TextBaseDataset):
     NUM_GENERATIONS = 1
 
     DATASET_URL = {
-        'WISE_cultural_common_sense': 'WISE_cultural_common_sense.tsv',
-        'WISE_natural_science': 'WISE_natural_science.tsv',
-        'WISE_spatio_temporal_reasoning': 'WISE_spatio_temporal_reasoning.tsv',
-        'WISE_all': 'WISE_all.tsv',
+        'WISE_all': 'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/WISE_all.tsv',
     }
 
     DATASET_MD5 = {
-        'WISE_cultural_common_sense': None,
-        'WISE_natural_science': None,
-        'WISE_spatio_temporal_reasoning': None,
-        'WISE_all': None,
+        'WISE_all': 'f4fb0fd05e83bd1c5ec48a37abe91735',
     }
 
     def __init__(self, dataset='WISE_all'):

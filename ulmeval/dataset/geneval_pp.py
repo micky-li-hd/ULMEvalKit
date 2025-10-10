@@ -17,11 +17,11 @@ class GenEvalPP(TextBaseDataset):
     NUM_GENERATIONS = 1
 
     DATASET_URL = {
-        'GenEvalPP': 'GenEvalPP.tsv',
+        'GenEvalPP': 'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/GenEvalPP.tsv',
     }
 
     DATASET_MD5 = {
-        'GenEvalPP': None,
+        'GenEvalPP': '52907d369795a4ce06fe359174f72acf',
     }
 
     def __init__(self, dataset='GenEvalPP'):

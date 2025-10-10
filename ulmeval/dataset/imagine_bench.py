@@ -16,11 +16,11 @@ class ImagineBench(TextBaseDataset):
     NUM_GENERATIONS = 1
 
     DATASET_URL = {
-        'ImagineBench': 'ImagineBench.tsv',
+        'ImagineBench': 'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/ImagineBench.tsv',
     }
 
     DATASET_MD5 = {
-        'ImagineBench': None,
+        'ImagineBench': 'dd65cfbb5672946a439b16b7696af2a0',
     }
 
     def __init__(self, dataset='ImagineBench'):

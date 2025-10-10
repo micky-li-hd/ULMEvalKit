@@ -10,30 +10,37 @@ class T2ICompBench(TextBaseDataset):
     NUM_GENERATIONS = 10
 
     DATASET_URL = {
-        'T2ICompBench_VAL': 'T2ICompBench_VAL.tsv',
-        'T2ICompBench_Color_VAL': 'T2ICompBench_Color_VAL.tsv',
-        'T2ICompBench_Shape_VAL': 'T2ICompBench_Shape_VAL.tsv',
-        'T2ICompBench_Texture_VAL': 'T2ICompBench_Texture_VAL.tsv',
-        'T2ICompBench_Spatial_VAL': 'T2ICompBench_Spatial_VAL.tsv',
-        'T2ICompBench_non_Spatial_VAL': 'T2ICompBench_non_Spatial_VAL.tsv',
-        'T2ICompBench_Complex_VAL': 'T2ICompBench_Complex_VAL.tsv',
+        'T2ICompBench_VAL':
+        'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/T2ICompBench_VAL.tsv',
+        'T2ICompBench_Color_VAL':
+        'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/T2ICompBench_Color_VAL.tsv',
+        'T2ICompBench_Shape_VAL':
+        'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/T2ICompBench_Shape_VAL.tsv',
+        'T2ICompBench_Texture_VAL':
+        'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/T2ICompBench_Texture_VAL.tsv',
+        'T2ICompBench_Spatial_VAL':
+        'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/T2ICompBench_Spatial_VAL.tsv',
+        'T2ICompBench_non_Spatial_VAL':
+        'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/T2ICompBench_non_Spatial_VAL.tsv',
+        'T2ICompBench_Complex_VAL':
+        'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/T2ICompBench_Complex_VAL.tsv',
     }
 
     DATASET_MD5 = {
         'T2ICompBench_VAL':
-        None,
+        'b46fb37aa7d973f661cd7b43aa2e58b8',
         'T2ICompBench_Color_VAL':
-        None,
+        'e718d1a73cc793a72f287c91e34e17d7',
         'T2ICompBench_Shape_VAL':
-        None,
+        '93669f86365e0565985036e6e8c6b9fe',
         'T2ICompBench_Texture_VAL':
-        None,
+        'b9c7821e7091f6f7229e2276ea2da0a2',
         'T2ICompBench_Spatial_VAL':
-        None,
+        '6e301c6d32bf0465ef89a53353a3c711',
         'T2ICompBench_non_Spatial_VAL':
-        None,
+        '8cb88471b72347196e448de9f36ae760',
         'T2ICompBench_Complex_VAL':
-        None,
+        'dbe4bee11bc00258daf5d9666127b557',
     }
 
     def build_prompt(self, line):

@@ -3,7 +3,7 @@ import warnings
 from .utils import *
 from ..smp import *
 from .t2i_compbench import T2ICompBench
-from .geneval import GenEvalDataset
+from .geneval import GenEval
 from .dpgbench import DPGBench
 from .wise import WISE
 from .imagine_bench import ImagineBench
@@ -12,11 +12,11 @@ from .omni_context import OmniContext
 from .genai_bench import GenAI_Bench
 
 IMAGE_DATASET = [
-    GenEvalDataset, OmniContext
+    OmniContext
 ]
 
 TEXT_DATASET = [
-    T2ICompBench, DPGBench, WISE, ImagineBench, GenEvalPP, GenAI_Bench
+    T2ICompBench, DPGBench, WISE, ImagineBench, GenEvalPP, GenAI_Bench, GenEval
 ]
 
 DATASET_CLASSES = IMAGE_DATASET + TEXT_DATASET

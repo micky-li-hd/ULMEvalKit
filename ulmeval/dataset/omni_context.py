@@ -16,11 +16,11 @@ class OmniContext(ImageBaseDataset):
     NUM_GENERATIONS = 1
 
     DATASET_URL = {
-        'OmniContext': 'OmniContext.tsv',
+        'OmniContext': 'https://huggingface.co/datasets/CaraJ/ULMEvalKit/resolve/main/OmniContext.tsv',
     }
 
     DATASET_MD5 = {
-        'OmniContext': None,
+        'OmniContext': 'be0a8174f0f84ca7e12bd66c2be4aedb',
     }
 
     def build_prompt(self, line):
