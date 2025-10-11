@@ -43,6 +43,10 @@ janus_series = {
     "JanusFlow-1.3B": partial(JanusFlow, model_path="deepseek-ai/JanusFlow-1.3B"),
 }
 
+t2ir1_series = {
+    "T2IR1": partial(T2IR1, model_path="CaraJ/T2I-R1"),
+}
+
 omnigen_series = {
     "OmniGen2": partial(OmniGen2, model_path="OmniGen2/OmniGen2"),
 }
@@ -83,6 +87,7 @@ model_groups = [
     show_o_series,
     omnigen_series,
     flux_series,
+    t2ir1_series,
 ]
 
 for grp in model_groups:

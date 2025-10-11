@@ -8,3 +8,4 @@ from .janus_genaration import JanusGeneration, JanusPro, JanusFlow
 from .showo import Showo
 from .omnigen2 import OmniGen2
 from .flux import Flux, FluxKontext
+from .t2ir1 import T2IR1

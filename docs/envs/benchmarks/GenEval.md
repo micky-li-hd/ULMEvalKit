@@ -3,6 +3,10 @@
 ### For GPU below Hopper series
 
 ```bash
+cd ULMEvalKit
+mkdir -p ulmeval/dataset/geneval
+wget https://download.openmmlab.com/mmdetection/v2.0/mask2former/mask2former_swin-s-p4-w7-224_lsj_8x2_50e_coco/mask2former_swin-s-p4-w7-224_lsj_8x2_50e_coco_20220504_001756-743b7d99.pth -O "mask2former_swin-s-p4-w7-224_lsj_8x2_50e_coco.pth"
+
 conda create --name geneval python=3.8.10
 conda activate geneval
 
@@ -27,6 +31,10 @@ pip install -v -e .
 ### For newer Hopper series
 
 ```bash
+cd ULMEvalKit
+mkdir -p ulmeval/dataset/geneval
+wget https://download.openmmlab.com/mmdetection/v2.0/mask2former/mask2former_swin-s-p4-w7-224_lsj_8x2_50e_coco/mask2former_swin-s-p4-w7-224_lsj_8x2_50e_coco_20220504_001756-743b7d99.pth -O "mask2former_swin-s-p4-w7-224_lsj_8x2_50e_coco.pth"
+
 conda create --name geneval python=3.10
 conda activate geneval
 

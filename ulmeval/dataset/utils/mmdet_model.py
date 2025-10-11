@@ -78,7 +78,7 @@ class MMDetModel:
             _ = {'': 0}
 
         # Use the current working directory (assumed to be ULMEvalKit) for cache base
-        cache_dir = Path.cwd() / "vlmeval" / "dataset" / "geneval"
+        cache_dir = Path.cwd() / "ulmeval" / "dataset" / "geneval"
         if not os.path.exists(os.path.join(cache_dir, f"{model_path}.pth")):
             raise FileNotFoundError(
                 f"Model {model_path} not found in cache. Please download it "

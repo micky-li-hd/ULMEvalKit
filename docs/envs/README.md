@@ -10,6 +10,7 @@ This guide provides environment setup instructions for supported models and benc
 + Show-o: [envs](models/Showo.md)/[paper](https://arxiv.org/abs/2506.15564)
 + OmniGen2: [envs](models/Omnigen2.md)/[paper](https://arxiv.org/abs/2506.18871)
 + Flux / Flux-Kontext: [paper](https://arxiv.org/abs/2506.15742)
++ T2I-R1: [envs](models/T2IR1.md)/[paper](https://arxiv.org/abs/2505.00703)
 
 *More models coming soon...*
 
