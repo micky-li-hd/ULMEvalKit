@@ -77,7 +77,10 @@ show_o_series = {
         Showo, mode='showo_demo_w_clip_vit', model_path="showlab/show-o-w-clip-vit"
     )
 }
-
+nextstep_series = {
+    "NextStep-1-Large": partial(
+        NextStep1,model_path="stepfun-ai/NextStep-1-Large")
+}
 supported_ULM = {}
 
 model_groups = [
@@ -88,6 +91,7 @@ model_groups = [
     omnigen_series,
     flux_series,
     t2ir1_series,
+    nextstep_series
 ]
 
 for grp in model_groups:
