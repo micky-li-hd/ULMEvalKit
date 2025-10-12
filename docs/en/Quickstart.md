@@ -23,7 +23,6 @@ To infer with API models (GPT-4v, Gemini-Pro-V, etc.), you need to first setup A
 
   ```bash
   # The .env file, place it under $ULMEvalKit
-  # API Keys of Proprietary ULMs
   # Gemini w. Google Cloud Backends
   GOOGLE_API_KEY=
   # OpenAI API
@@ -49,13 +48,13 @@ To use the script, you can use `$ULMEvalKit/run.py`:
 - `--data (list[str])`: Set the dataset names that are supported in ULMEvalKit (names can be found in the codebase README).
 - `--model (list[str])`: Set the ULM names that are supported in ULMEvalKit (defined in `supported_ULM` in `ulmeval/config.py`).
 - `--mode (str, default to 'all', choices are ['all', 'infer'])`:
-  - When `mode` set to "all", will perform both inference and evaluation;
+  - When `mode` set to `all`, will perform both inference and evaluation;
   - when set to `infer`, will only perform the inference. This is useful when the environment of the ULM and benchmark is not compatible.
 - `--api-nproc (int, default to 4)`: The number of threads for OpenAI API calling.
 - `--work-dir (str, default to '.')`: The directory to save evaluation results.
 - `--num-generations (int, default to None)`: The number of generations per prompt. Default to None, which means the number of generations is determined by the dataset. If the dataset does not specify the number of generations, it defaults to 1.
 
-**Command for Evaluating Image Benchmarks**
+**Command for Evaluating Benchmarks**
 
 You can run the script with `python` or `torchrun`:
 
@@ -68,7 +67,7 @@ python run.py --data T2ICompBench_non_Spatial_VAL --model OmniGen2
 # Janus-1.3B on DPGBench, with 5 generations per prompt, Inference only
 python run.py --data DPGBench --model Janus-1.3B --num-generations 5 --mode infer
 
-# Janus-1.3B on DPGBench, with default number of generations of DPGBench (4), Evaluation only
+# Janus-1.3B on DPGBench, Evaluation only
 python evaluate.py --data DPGBench --model Janus-1.3B --result-file ./outputs/Janus-1.3B/T{date}_G{commit_id}/Janus-1.3B_DPGBench.pkl
 
 # When running with `torchrun`, one ULM instance is instantiated on each GPU. It can speed up the inference.
@@ -78,4 +77,4 @@ python evaluate.py --data DPGBench --model Janus-1.3B --result-file ./outputs/Ja
 torchrun --nproc_per_node=8 run.py --data T2ICompBench_non_Spatial_VAL --model Janus-Pro-7B --num-generations 10
 ```
 
-The evaluation results will be printed as logs, besides. **Result Files** will also be generated in the directory `$YOUR_WORKING_DIRECTORY/{model_name}`. Files ending with `.csv` contain the evaluated metrics.
+The evaluation results will be printed as logs, besides. **Result Files** will also be generated in the directory `$YOUR_WORKING_DIRECTORY/{model_name}`. Files ending with `.csv` or `.pkl` contain the evaluated metrics.
