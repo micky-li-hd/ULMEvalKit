@@ -37,11 +37,11 @@ In this class, **you need to implement** the `evaluate(eval_file, **judge_kwargs
 
 **1. Support `generate_inner` API (mandatory).**
 
-All existing models are implemented in `ulmeval/ulm`. For a minimal model, your model class **must implement the method** `generate_inner(msgs, dataset=None)`. In this function, you feed a multi-modal message to your ULM and return the ULM prediction (which is an image). The optional argument `dataset` can be used as the flag for the model to switch among various inference strategies. You can also implement the `batch_generation_inner(msgs, dataset, num_generations)` function to support batch inference.
+All existing models are implemented in `ulmeval/ulm`. For a minimal model, your model class **must implement the method** `generate_inner(msgs, dataset=None)`. In this function, you feed a multi-modal message to your ULM and return the ULM prediction (which is an image `PIL.Image`). The optional argument `dataset` can be used as the flag for the model to switch among various inference strategies. You can also implement the `batch_generation_inner(msgs, dataset, num_generations)` function to support batch inference, which returns `[PIL.Image]` of length `num_generations`.
 
 The multi-modal messages `msgs` is a list of dictionaries, each dictionary has two keys: type and value:
 - `type`: We currently support two types, choices are ["image", "text"].
-- `value`: When type=='text' , the value is the text message (a single string); when type=='image', the value can be the local path of an image file, or the image URL.
+- `value`: When `type=='text'`, the value is the text message (a single string); when `type=='image'`, the value can be the local path of an image file, or the image URL.
 
 Currently a multi-modal message may contain arbitrarily interleaved images and texts. If your model do not support that, a practice can be taking the 1st image and concatenated text messages as the input.
 
