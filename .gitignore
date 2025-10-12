@@ -218,3 +218,7 @@ grok-*
 *.tsv
 hf_cache
 t2v_metrics
+NextStep-1
+test.py
+test.ipynb
+Emu3
