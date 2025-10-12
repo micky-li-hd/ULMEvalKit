@@ -81,6 +81,13 @@ nextstep_series = {
     "NextStep-1-Large": partial(
         NextStep1,model_path="stepfun-ai/NextStep-1-Large")
 }
+emu3_series = {
+    "Emu3-Gen": partial(
+        Emu3Gen,
+        model_path="BAAI/Emu3-Gen",
+        vq_path="BAAI/Emu3-VisionTokenizer"
+    ),
+}
 supported_ULM = {}
 
 model_groups = [
@@ -91,7 +98,8 @@ model_groups = [
     omnigen_series,
     flux_series,
     t2ir1_series,
-    nextstep_series
+    nextstep_series,
+    emu3_series,
 ]
 
 for grp in model_groups:
