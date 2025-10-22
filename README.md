@@ -109,13 +109,13 @@ If you find this work helpful, please consider to **star🌟** this repo. Thanks
 When using ULMEvalKit in your research or referencing published evaluation results, please cite:
 
 ```bib
-@misc{ulmevalkit2025,
-    title={Ulmevalkit: An open-source toolkit for evaluating unified large multi-modal models and generative models},
-    url={https://github.com/ULMEvalKit/ULMEvalKit},
-    author={Dongzhi Jiang, Renrui Zhang, Yankai Shu, Yuyang Peng, Zhuofan Zong, Yuchen Duan, Zihao Wang, Jiaming Liu, Hao Chen, Ziyu Guo, Junyan Ye, Rui Liu, Pheng Ann Heng, Shanghang Zhang, Hongsheng Li},
-    version={v0.1.0},
-    month={October},
-    year={2025}
+@misc{jiang2025ulmevalkit,
+  title={Ulmevalkit: An open-source toolkit for evaluating unified large multi-modal models and generative models},
+  author={Jiang, Dongzhi and Zhang, Renrui and Shu, Yankai and Peng, Yuyang and Zong, Zhuofan and Duan, Yuchen and Wang, Zihao and Liu, Jiaming and Chen, Hao and Guo, Ziyu and Ye, Junyan and Liu, Rui and Heng, Pheng Ann and Zhang, Shanghang and Li, Hongsheng},
+  url={https://github.com/ULMEvalKit/ULMEvalKit},
+  version={v0.1.0},
+  month={October},
+  year={2025}
 }
 ```
 
